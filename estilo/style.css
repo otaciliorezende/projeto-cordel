@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: rgb(152, 149, 149);   
+    font-family: var(--fonte1); 
+}
+
+header {
+    background-color: rgb(43, 42, 42);
+    color: rgb(245, 245, 246);
+    text-align: center;
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: rgb(241, 245, 245);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {    
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vh;    
+}
+
+section > p {
+    padding-bottom: 3.5em;
+}
+
+section.normal {
+      background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+}
+
+section.imagem {
+    background-color: rgba(255, 248, 248, 0.971);
+    color: rgb(255, 255, 255);
+    box-shadow: inset 6px 6px 13px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(5, 5, 5, 0.179);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+       background-image: url('../imagens/background001.jpg');
+       background-position: right center;
+      
+
+}
+
+section#img02 {
+       background-image: url('../imagens/background002.jpg');
+       
+}
+footer {
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    padding: 5px;
+}
+
